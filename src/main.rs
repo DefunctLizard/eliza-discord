@@ -9,7 +9,7 @@ fn main() {
 
     // Log in to Discord using a bot token from the environment
     let discord =
-        Discord::from_bot_token("Nzg3NDIxNTc4NzE5Nzg5MTA2.X9UtfQ.Aw74II3ERJWF-Upbe5BmUT5hFUc")
+        Discord::from_bot_token("TOKEN_HERE")
             .expect("login failed");
 
     // Establish and use a websocket connection
