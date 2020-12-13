@@ -9,7 +9,7 @@ fn main() {
 
     // Log in to Discord using a bot token from the environment
     let discord =
-        Discord::from_bot_token("TOKEN_HERE")
+        Discord::from_bot_token("TOKEN")
             .expect("login failed");
 
     // Establish and use a websocket connection
@@ -34,7 +34,7 @@ fn main() {
                     } else if message.content == "&help" {
                         let _ = discord.send_message(
 							    message.channel_id,
-							    &format!("This is a discord implementation of the early 'chatbot' program ELIZA.The original program was developed from 1964 to 1966 at the MIT Artificial Intelligence Laboratory by Joseph Weizenbaum. \n\nCommands:\n&start - Start a session\n&respond <TEXT> - Reply to an answer\n&leave - Leave the session\n\nDeveloped with love, in Rust, by Grant Handy :penguin:"),
+							    &format!("This is a discord implementation of the early 'chatbot' program ELIZA.The original program was developed from 1964 to 1966 at the MIT Artificial Intelligence Laboratory by Joseph Weizenbaum. \n\nCommands:\n```\n&start - Start a session\n&respond <TEXT> - Reply to an answer\n&leave - Leave the session\n```\n\nDeveloped with love, in Rust, by Grant Handy :penguin:"),
 							    "",
 							    false,
 						    );
