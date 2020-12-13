@@ -11,4 +11,4 @@ Commands:
 &leave - Leave the session.
 ```
 
-Developed with love, in Rust, by Grant Handy 🐧
+Written in Rust, with love, by Grant Handy 🐧
